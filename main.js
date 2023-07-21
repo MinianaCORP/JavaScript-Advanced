@@ -1,11 +1,17 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { asyncComponent } from './src/concepts/05-async';
+import { generatorAsyncComponent } from './src/concepts/10-generators-async';
+
+// import { generatorFunctionsComponent } from './src/concepts/09-generators';
+// import { forAwaitComponent } from './src/concepts/08-for-await';
+// import { asyncAwait2Component } from './src/concepts/07-async-await';
+// import { asyncAwaitComponent } from './src/concepts/06-async-await';
+// import { asyncComponent } from './src/concepts/05-async';
 // import { promiseRaceComponent } from './src/concepts/04-promise-race'
-// import { enviromentsComponent } from './src/concepts/01-environments'
-// import { callbacksComponent } from './src/concepts/02-callbacks'
 // import { promiseCompenent } from './src/concepts/03-promises'
+// import { callbacksComponent } from './src/concepts/02-callbacks'
+// import { enviromentsComponent } from './src/concepts/01-environments'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -28,4 +34,10 @@ const element = document.querySelector( '.card' );
 // callbacksComponent( element );
 // promiseCompenent( element );
 // promiseRaceComponent( element );
-asyncComponent( element );
+// asyncComponent( element );
+// asyncAwaitComponent( element );
+// asyncAwait2Component( element );
+// forAwaitComponent( element );
+// generatorFunctionsComponent( element );
+
+generatorAsyncComponent( element );
